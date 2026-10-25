@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: tomgpt-supercore-studio-free
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeployTrigger: off
+    envVars:
+      - key: TOMGPT_MCP_TOKEN
+        generateValue: true
+      - key: TOMGPT_DOMAIN
+        fromService:
+          type: web
+          name: tomgpt-supercore-studio-free
+          envVarKey: RENDER_EXTERNAL_HOSTNAME
+      - key: TOMGPT_RENDER_FREE
+        value: '1'
+      - key: TOMGPT_DB
+        value: /srv/data/tomgpt.sqlite3
+      - key: TOMGPT_HOST
+        value: 0.0.0.0
+      - key: TOMGPT_SUPERCORE_OUTPUT
+        value: /srv/super_output
+      - key: TOMGPT_OUTPUT
+        value: /srv/output
+      - key: TOMGPT_VIDEO_OUTPUT
+        value: /srv/data/videos
+      - key: TOMGPT_BUILD_QA_ITERATIONS
+        value: '2'
+      - key: TOMGPT_BUILD_QA_SOAK
+        value: '1'

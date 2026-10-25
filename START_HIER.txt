@@ -1,0 +1,18 @@
+TOMGPT SUPERCORE v8 – FLACHE ZIP OHNE ORDNER
+===========================================
+
+1) ZIP auf dem Handy ENTPACKEN.
+2) Die 8 DATEIEN daraus DIREKT in GitHub/Tom76 hochladen.
+   Wichtig: die ZIP alleine in GitHub hochzuladen genügt nicht!
+3) In GitHub müssen Dockerfile, render.yaml, boot.py,
+   core_bundle.py, requirements.txt, README.md,
+   VIDEO_SKILLS.md, START_HIER.txt direkt sichtbar sein.
+4) Render -> New Web Service (oder New Blueprint) -> Tom76
+5) Free-Tarif und Docker wählen. Bei Blueprint erzeugt Render
+   TOMGPT_MCP_TOKEN automatisch.
+6) Videos: kostenlose Motion-Design-MP4 plus LTX-KI-Vorbereitung.
+   Kein fotorealistisches gratis GPU-KI-Video auf Render Free.
+
+Deine GitHub-Adresse: https://github.com/tomdreidoppel16-stack/Tom76
+
+WICHTIG: Jetzt noch KEINE Online-Bereitstellung bestätigt.
